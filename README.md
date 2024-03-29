@@ -32,3 +32,20 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
+
+
+
+NEXT_PUBLIC_API_HOST = https://staging-api.propviewz.com
+# NEXT_PUBLIC_API_HOST = https://api.propviewz.com
+NEXT_PUBLIC_HOST = http://localhost:3000
+# NEXT_PUBLIC_API_HOST = http://192.168.1.144:3003
+# NEXT_PUBLIC_API_HOST = http://192.168.1.180:3001
+NEXT_PUBLIC_GOOGLE_MAP_KEY = "AIzaSyBFavLz6vObS4Q4_hzH7m-LUOEsfS3yUQ8"
+NEXT_PUBLIC_GOOGLE_AUTH_CLIENT_ID = "918331279964-10rq89pa0hsou04412r742u1tjipv3ip.apps.googleusercontent.com"
+# NEXT_PUBLIC_RAZOR_API_KEY = "rzp_live_UJnOjkU2d3Ra8G"
+NEXT_PUBLIC_RAZOR_API_KEY = "rzp_test_fkDt8HSK1XWooa"
+# NEXT_PUBLIC_HOST = https://api.propviewz.com
+NEXT_PUBLIC_VALUATION_HOST = "https://reports-server-y9j8.onrender.com"
+test_card = "5267 3181 8797 5449"
