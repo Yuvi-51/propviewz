@@ -1,0 +1,97 @@
+.ProjectReportHandler {
+  max-height: 80vh;
+  .main-heading {
+    color: var(--black, #121212);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .checkbox {
+    width: 15px;
+    height: 15px;
+    accent-color: #f1592a;
+  }
+  .label {
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .edit-data {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+  .project-name {
+    color: var(--black, #121212);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+  .project-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .sub-info {
+    color: var(--2nd-black, #383838);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .sub-info {
+    text-align: left;
+    margin-top: -5px;
+    margin-left: 35px;
+  }
+  .input-area {
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 90%;
+    // height: 70px;
+    border-radius: 4px;
+    padding: 5px;
+
+    border: 1px solid #bdbdbd;
+  }
+  .input-area::placeholder {
+    color: #757575;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .max-limit {
+    margin-left: 30px;
+    color: #757575;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .hr-line {
+    margin-top: 10px;
+    width: 100%;
+    border: 1px solid #e9e9e9;
+  }
+  .submit {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 4px;
+    background: #f1592a;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  .btn-div {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

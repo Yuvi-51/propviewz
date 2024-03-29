@@ -1,0 +1,91 @@
+$color_1: white;
+$color_2: #f1592a;
+
+.profile-header {
+  .is-sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+    box-shadow: 0 2px 24px 0 rgb(0 0 0 / 15%);
+    background-color: #ffffff;
+
+    .sticky-main {
+      //   border: 1px solid red;
+      padding: 10px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      width: 100%;
+
+      .sticky-city {
+        // border: 1px solid red;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+        color: #f1592a;
+      }
+
+      .project-search-input-container {
+        // border: 1px solid red;
+        position: relative;
+        width: 70%;
+        height: 40px;
+        display: inline-block;
+      }
+
+      .u-icon-inner {
+        grid-area: uIcon;
+        color: #f1592a;
+        cursor: pointer;
+        border: 2px solid $color_2;
+        width: 40px;
+        height: 40px;
+        font-size: 23px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .not-sticky {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .profile-header {
+    .is-sticky {
+      .sticky-main {
+        // border: 1px solid red;
+        padding: 10px 20px;
+        gap: 10px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile-header {
+    .is-sticky {
+      .sticky-main {
+        padding: 10px;
+        gap: 15px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .profile-header {
+    .is-sticky {
+      .sticky-main {
+        .u-icon-inner {
+          height: 35px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,205 @@
+$yellow: #fbc02d;
+
+.project-review-modal {
+  max-height: 80vh;
+  min-height: 30vh;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  .btn-group {
+    display: flex;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+
+    .field-Title {
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #383838;
+      font-weight: 500;
+    }
+    .field-Title:first-child {
+      margin-top: 0;
+    }
+
+    .project-name {
+      border: 1px solid #d9d9d9;
+      color: #383838;
+      font-size: 15px;
+      padding: 5px 15px;
+      width: max-content;
+      border-radius: 5px;
+      pointer-events: none;
+      outline: none;
+      &::selection {
+        color: #383838;
+        background: transparent;
+      }
+      &::-moz-selection {
+        color: #383838;
+        background: transparent;
+      }
+    }
+
+    .project-search-input-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .error-text {
+      color: red;
+      font-size: 12px;
+    }
+  }
+
+  .file-input {
+    display: none;
+  }
+
+  .uploaded-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: none;
+    background-color: transparent;
+    margin: 0;
+  }
+
+  .status {
+    .btn-group {
+      margin: auto;
+      display: flex;
+      // border: 1px solid red;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      align-items: center;
+
+      .status-title,
+      .active {
+        width: 100px;
+        border: 1px solid #d9d9d9;
+        border-radius: 4px;
+        padding: 5px 15px;
+        cursor: pointer;
+        transition: 0.3s ease;
+        text-align: center;
+
+        &:hover {
+          border: 1px solid #f1592a;
+        }
+      }
+
+      .active {
+        color: #f1592a;
+        border: 1px solid #f1592a;
+      }
+    }
+  }
+
+  .rating-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    // gap: 50px;
+    // padding: 5px;
+    .field-name {
+      text-align: left;
+      width: 220px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 15px;
+      color: #383838;
+    }
+  }
+
+  .stars {
+    display: flex;
+    align-items: center;
+    // font-size: 20px ;
+    gap: 2px;
+    padding-top: 5px;
+  }
+
+  .css-dqr9h-MuiRating-label {
+    font-size: 18px;
+  }
+
+  .fa-star {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .star-active {
+    color: $yellow;
+  }
+
+  .title-input {
+    width: calc(100% - 100px);
+    border-radius: 3px;
+    padding: 5px;
+    border: 1px solid black;
+  }
+
+  .text {
+    padding: 5px;
+    width: 100%;
+    height: 145px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+
+  .upload-pic {
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+
+    .upload-pic-btn {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      font-weight: 500;
+      font-size: 14px;
+      color: #f1592a;
+      // border: 1px solid #d9d9d9;
+      // box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);
+    }
+  }
+  .closeButton {
+    border: 1px solid red;
+    background-color: blue;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-review-modal {
+    .uploaded-image {
+      width: 60px;
+      height: 60px;
+    }
+    .title-input {
+      width: calc(100% - 60px);
+    }
+  }
+}

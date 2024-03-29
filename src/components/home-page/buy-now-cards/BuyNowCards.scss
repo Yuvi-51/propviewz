@@ -1,0 +1,224 @@
+.buy_now {
+  .modal-header {
+    border: none;
+  }
+  .check_icon {
+    // border: 1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    p {
+      width: 90%;
+    }
+  }
+  .btn_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card_main_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .slick-next:before {
+    color: #121212;
+    margin-left: -50px;
+  }
+  .slick-prev:before {
+    color: #121212;
+    margin-right: -50px;
+    z-index: 110;
+  }
+  .expand_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .svg_circle {
+    position: relative;
+  }
+  .Header_div {
+    // margin-top: -75px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .header_title {
+    color: var(--Black, #121212);
+    // font-family: Inter;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .separator {
+    border-top: 2px solid #f1592a;
+    width: 57px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .slick-dots {
+    margin-bottom: 10px;
+  }
+
+  .card_main_div_orange,
+  .card_main_div_green,
+  .card_main_div_blue {
+    // border: 1px solid red;
+    // margin-bottom: 31px;
+    display: flex;
+    padding: 16px 14px 20px 14px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    position: relative;
+    height: 400px;
+    width: 85% !important;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px auto;
+    transition: transform 0.2s;
+  }
+
+  .card_main_div_orange {
+    background: conic-gradient(
+      from 137deg at 50% 50%,
+      #f4ab73 78.75deg,
+      #f5bf64 136.0465443134308deg,
+      #f2bc69 185.40679693222046deg,
+      #f3b89f 276.2696957588196deg,
+      #f5ac72 348.9927291870117deg
+    );
+
+    /* search bar shadow */
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  }
+  .card_main_div_green {
+    background: conic-gradient(
+      from 137deg at 50% 50%,
+      #7ee9a7 78.75deg,
+      #7de8ab 136.0465443134308deg,
+      #bce993 185.40679693222046deg,
+      #81e6ab 276.2696957588196deg,
+      #a6e9a2 348.9927291870117deg
+    );
+
+    /* search bar shadow */
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  }
+  .card_main_div_blue {
+    background: conic-gradient(
+      from 137deg at 50% 50%,
+      #94cfff 78.75deg,
+      #b6e4f3 136.0465443134308deg,
+      #c1e8ff 185.40679693222046deg,
+      #87c6ff 276.2696957588196deg,
+      #add4ee 346.8750071525574deg
+    );
+
+    /* search bar shadow */
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .card_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+  .card_header div {
+    color: #fff;
+    text-align: center;
+    // font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.9px;
+  }
+  .hr_line {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 268px;
+    height: 0.5px;
+    background: #fff;
+  }
+  .slider-container {
+    width: 100%; /* Adjust the width as needed */
+    // margin: 0 auto; /* Center the slider */
+  }
+
+  .card_content {
+    display: inline-flex;
+    height: 150px;
+    padding: 16px 4px 10px 4px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: -10px;
+    width: 90%;
+  }
+  .card_content p {
+    color: var(--2nd-Black, #383838);
+    // font-family: Inter;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px !important; /* 166.667% */
+    text-align: left;
+  }
+  .buy_now_btn {
+    cursor: pointer;
+    margin-top: 20px;
+    display: flex;
+    width: 188px;
+    height: 40px;
+    padding: 12px 24px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #fff;
+  }
+  .buy_now_btn span {
+    color: var(--Orange, #f1592a);
+    // font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.8px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .buy_now {
+    .card_main_div_orange,
+    .card_main_div_green,
+    .card_main_div_blue {
+      width: 95% !important;
+    }
+  }
+}

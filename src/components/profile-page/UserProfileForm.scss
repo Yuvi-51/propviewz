@@ -1,0 +1,27 @@
+.user-profile-form {
+  .state {
+    input {
+      // border: 1px solid red;
+      width: 100%;
+      padding: 7px 15px;
+      outline: none;
+    }
+    .dropdown-menu {
+      background-color: white;
+      border: 1px solid rgb(222, 215, 215);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      border-radius: 0 0 5px 5px;
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 5px;
+      padding: 10px 0;
+      a {
+        padding: 5px 15px;
+        &:hover {
+          background-color: #f1582a71;
+        }
+      }
+    }
+  }
+  
+}

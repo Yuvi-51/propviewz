@@ -1,0 +1,116 @@
+.project-and-location-search-inputs {
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  // background: #ffffff;
+  align-items: center;
+  background-image: url("/images/fi_search.svg");
+  background-repeat: no-repeat;
+  background-position: 16px 50%;
+  background-size: 20px;
+  padding-left: 40px !important;
+}
+.project-and-location-dropdown {
+  // z-index: ;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  width: 100%;
+  z-index: 2 !important;
+  font-size: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  max-height: 400px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2%;
+  & > .project-and-location-dropdown-container:first-child {
+    width: 67%;
+  }
+  & > .project-and-location-dropdown-container:last-child {
+    width: calc(100% - 69%);
+  }
+  .project-and-location-dropdown-container {
+    // border: 1px solid red;
+    // z-index: 22 !important;
+    text-align: left;
+    & > p {
+      font-weight: 600;
+      padding: 0 5px;
+      // border: 1px solid red;
+    }
+    .project-and-location-dropdown-contents {
+      padding: 5px 0;
+      overflow-y: auto;
+      max-height: 300px;
+      // border: 1px solid blue;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+
+      .project-and-location-dropdown-row {
+        // border: 1px solid red;
+        display: flex;
+        gap: 10px;
+        font-size: 15px;
+        padding: 5px;
+        transition: 0.3s ease;
+        &:hover {
+          background-color: #d7522950;
+        }
+      }
+    }
+    .btn-add-new {
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      border: 1px solid #f1592a;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: 0.3s ease;
+      color: #f1592a;
+      &:hover {
+        color: white;
+        background-color: #f1592a;
+      }
+    }
+  }
+}
+.project-and-location-dropdown::-webkit-scrollbar,
+.project-and-location-dropdown-contents::-webkit-scrollbar {
+  width: 8px;
+}
+
+.project-and-location-dropdown::-webkit-scrollbar-thumb,
+.project-and-location-dropdown-contents::-webkit-scrollbar-thumb {
+  background-color: rgb(229, 225, 225);
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .project-and-location-dropdown {
+    // border: 1px solid red;
+    padding: 5px 10px;
+    flex-direction: column;
+    gap: 2%;
+    .project-and-location-dropdown-container {
+      width: 100% !important;
+      // border: 1px solid blue;
+      .project-and-location-dropdown-contents {
+        max-height: 100%;
+        // border: 1px solid blue;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.viewed-transactions {
+  .table-striped {
+    width: 100%;
+    margin: auto;
+    td,
+    th {
+      border: 1px solid #e0e0e0;
+      text-align: center;
+      padding: 8px 10px;
+    }
+  }
+
+  .table-striped > tbody > tr:nth-child(2n + 1) > td,
+  .table-striped > tbody > tr:nth-child(2n + 1) > th {
+    background-color: #fff5f1;
+  }
+
+  [tabindex="0"] {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #383838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    color: #383838;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .viewed-transactions {
+    .table-striped {
+      td,
+      th {
+        text-align: center;
+        padding: 3px 5px;
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .viewed-transactions {
+    .table-striped {
+      td,
+      th {
+        text-align: center;
+        padding: 3px 5px;
+        font-size: 10px;
+      }
+    }
+  }
+}

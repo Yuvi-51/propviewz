@@ -1,0 +1,228 @@
+.project-gallery-container {
+  padding: 0;
+  width: 85%;
+  margin: 25px auto;
+  .gallery_container {
+    border: 1px solid #d8d8d8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: auto;
+    .side-div {
+      width: 25%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      & > div {
+        max-width: 80%;
+        min-width: 50%;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        padding: 4px;
+        color: #f1592a;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 4px;
+        border: 1px solid #f1592a;
+        &:hover {
+          background-color: #f1592a;
+          color: #ffffff;
+        }
+      }
+    }
+    .side-div-mobile {
+      display: none;
+    }
+    .gallery-image-div {
+      // border: 1px solid red;
+      width: 75%;
+
+      .thumb_images {
+        cursor: pointer;
+        height: 110px;
+        width: 90%;
+        margin: auto;
+        object-fit: cover;
+        // width: 130px;
+        // border: 1px solid red;
+        border-radius: 6px;
+      }
+    }
+    .image-gallery-left-nav {
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      height: 30px;
+      width: 30px;
+      padding: 5px;
+      left: -10px;
+    }
+    .image-gallery-right-nav {
+      background-color: white;
+      position: absolute;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      padding: 5px;
+      right: -10px;
+    }
+  }
+
+  .fullscreen-container {
+    // border: 10px solid red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    z-index: 20;
+    padding: 10px;
+    .fullscreen-content {
+      // border: 1px solid red;
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      .fullscreen_image_container {
+        position: relative;
+        // border: 1px solid red;
+        height: max-content;
+        .fullscreen-image {
+          // border: 1px solid red;
+          height: 80vh;
+          max-width: 80vw;
+          margin-top: 50px;
+          object-fit: cover; /* Adjust image size while maintaining aspect ratio */
+        }
+        .fullscreen_title {
+          // border: 1px solid red;
+          z-index: 20;
+          text-transform: capitalize;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          padding: 10px;
+          background: rgba(0, 0, 0, 0.7);
+          color: white;
+          width: fit-content; /* To make it stretch the full width of the image area */
+        }
+      }
+      .image-report-btn {
+        position: absolute;
+        z-index: 30;
+        top: 20px;
+        right: 70px;
+      }
+      .close-button {
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        top: 11px;
+        right: 20px;
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      .close-button:hover {
+        color: red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project-gallery-container {
+    .gallery_container {
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 5px;
+      .side-div {
+        display: none;
+      }
+      .side-div-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+      }
+      .side-div-mobile div {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        justify-content: center;
+        width: 30%;
+        padding: 2px;
+        color: #f1592a;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 4px;
+        border: 1px solid #f1592a;
+      }
+      .side-div-mobile div:hover {
+        background-color: #f1592a;
+        color: white;
+      }
+
+      .gallery-image-div {
+        width: 100%;
+        .thumb_images {
+          height: 80px;
+        }
+      }
+    }
+
+    .fullscreen-container {
+      .fullscreen-content {
+        padding: 10px;
+        .fullscreen_image_container {
+          .fullscreen-image {
+            margin-top: 30%;
+          }
+        }
+      }
+    }
+
+    .close-button {
+      cursor: pointer;
+      color: white;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .project-gallery-container {
+    width: 95%;
+    .gallery_container {
+      .side-div-mobile div {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+        justify-content: center;
+        width: 30%;
+        padding: 2px;
+        color: #f1592a;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 4px;
+        border: 1px solid #f1592a;
+      }
+    }
+  }
+}

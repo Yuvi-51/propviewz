@@ -1,0 +1,157 @@
+$white: white;
+$black: black;
+$background-orange: #f1592a;
+$background-white: white;
+
+.share-view-cards-container {
+  // border: 1px solid red;
+  width: 95%;
+  height: max-content;
+  padding: 0;
+  margin: auto;
+  .home-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+
+    .card {
+      height: 200px;
+      width: 50%;
+      // border: 1px solid red;
+      display: flex;
+      border-radius: 10px;
+
+      align-items: center;
+      justify-content: space-between;
+
+      .review-content {
+        width: 70%;
+        // border: 1px solid red;
+        font-weight: 500;
+        color: $white;
+        padding: 15px 25px;
+
+        .card-text {
+          // border: 1px solid red;
+          height: 100px;
+          font-size: 18px;
+          color: #121212;
+        }
+
+        .btn {
+          width: max-content;
+          font-weight: 600;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          gap: 3px;
+          padding: 10px 15px;
+          color: $background-orange;
+          background: #ffffff;
+          box-shadow: 0px 4px 4px rgba(30, 29, 29, 0.08);
+          border-radius: 4px;
+
+          &:hover {
+            background-color: #ffffff;
+            transform: scale(1.05);
+            color: #f1592a;
+          }
+        }
+      }
+    }
+
+    .card-bg-review {
+      background: url("../../../../public/images/image 33.svg");
+      background-size: cover;
+    }
+
+    .card-bg-post {
+      background: url("../../../../public/images/image 32.svg");
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .share-view-cards-container {
+    .home-cards {
+      gap: 20px;
+
+      .card {
+        height: 200px;
+
+        .review-content {
+          padding: 15px 20px;
+
+          .card-text {
+            font-size: 16px;
+            line-height: 20px;
+          }
+
+          .btn {
+            gap: 3px;
+            padding: 8px 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .share-view-cards-container {
+    width: 100%;
+    .home-cards {
+      // border: 1px solid red;
+      gap: 10px;
+
+      // .card {
+      //   // border: 1px solid red;
+      //   width: 100%;
+      //   height: 180px;
+
+      //   .review-content {
+      //     padding: 10px;
+      //     width: 450px;
+      //     margin: auto;
+
+      //     .card-text {
+      //       height: 80px;
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .share-view-cards-container {
+    .home-cards {
+      // gap: 10px;
+      overflow: scroll;
+      .card {
+        width: 100%;
+        height: 180px;
+
+        .review-content {
+          padding: 10px;
+          padding: 10px;
+          width: 450px;
+          margin: auto;
+
+          .card-text {
+            font-size: 14px;
+            height: 80px;
+          }
+        }
+
+        .home-card-img {
+          width: 90px;
+          height: 90px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+tr:nth-child(even) {
+  background-color: #ebebeb !important; /* Grey color */
+}
+
+/* Apply styles to odd rows */
+tr:nth-child(odd) {
+  background-color: #fff5f1 !important; /* #f1592a color */
+}
+.shadow-small {
+  padding: 0 !important;
+}
+.mobile_filter {
+  // display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 790px) {
+  .mobile_filter {
+    display: block;
+    color: gray;
+    cursor: pointer;
+    padding: 2px !important;
+    width: 10px;
+  }
+}

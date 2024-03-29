@@ -1,0 +1,336 @@
+.rating {
+  padding: 0;
+  width: 85%;
+  margin: auto;
+
+  .carousal-heading {
+    width: 100%;
+  }
+
+  .main-div {
+    padding: 20px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+
+    .first-div {
+      width: max-content;
+      // border: 1px solid red;
+      display: flex;
+      gap: 46px;
+      align-items: center;
+
+      .stars {
+        font-weight: 600;
+        font-size: 58px;
+        color: #121212;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .stars-review {
+          font-weight: 400;
+          font-size: 14px;
+          color: #383838;
+        }
+      }
+
+      .bar-rating-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+
+        .bar-rating {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          margin: 2px 0;
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #383838;
+          }
+
+          .custom-progress {
+            width: 200px;
+            height: 8px;
+            border: none;
+            background-color: #eeeeee;
+            border-radius: 5px;
+            overflow: hidden;
+
+            .custom-progress-inner {
+              content: "";
+              display: block;
+              height: 100%;
+              border-radius: 5px;
+            }
+          }
+
+          .extra-space {
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+
+    .second-div {
+      width: 60%;
+      // border: 1px solid red;
+      display: flex;
+      height: 150px;
+
+      & > div {
+        height: 80%;
+        width: 20%;
+        margin: auto;
+        text-align: center;
+      }
+
+      .centered {
+        height: 80%;
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        .css-79elbk {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .circular-rating,
+        .circular-ratings {
+          // border: 1px solid blue;
+          // width: 100%;
+          svg {
+            width: 80px;
+            height: 80px;
+            // border: 1px solid red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        .inner-value {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .rating-value {
+        // border: 1px solid red;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .rating {
+    .main-div {
+      .second-div {
+        width: 50%;
+        // border: 1px solid red;
+        height: 130px;
+
+        align-items: flex-start;
+
+        .centered {
+          .circular-rating,
+          .circular-ratings {
+            svg {
+              width: 70px;
+              height: 70px;
+            }
+          }
+        }
+
+        // .rating-value {
+        //   border: 1px solid red;
+        // }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .rating {
+    .main-div {
+      gap: 20px;
+
+      .first-div {
+        // border: 1px solid red;
+        gap: 26px;
+
+        .stars {
+          font-size: 48px;
+        }
+
+        .bar-rating-div {
+          // border: 1px solid red;
+          gap: 5px;
+
+          .bar-rating {
+            p {
+              font-size: 13px;
+            }
+
+            .custom-progress {
+              width: 130px;
+            }
+          }
+        }
+      }
+
+      .second-div {
+        // width: 50%;
+        // // border: 1px solid red;
+        // height: 120px;
+
+        .centered {
+          // border: 1px solid red;
+
+          .circular-rating,
+          .circular-ratings {
+            svg {
+              width: 50px;
+              height: 50px;
+            }
+          }
+        }
+
+        .rating-value {
+          // border: 1px solid red;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .rating {
+    .main-div {
+      gap: 20px;
+      flex-direction: column;
+
+      .first-div {
+        // border: 1px solid red;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .bar-rating-div {
+          // border: 1px solid red;
+          gap: 4px;
+
+          .bar-rating {
+            .custom-progress {
+              width: 330px;
+            }
+          }
+        }
+      }
+
+      .second-div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .rating {
+    .main-div {
+      .first-div {
+        // border: 1px solid red;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .bar-rating-div {
+          .bar-rating {
+            .custom-progress {
+              width: 220px;
+            }
+          }
+        }
+      }
+
+      .second-div {
+        .rating-value {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .rating {
+    .main-div {
+      .first-div {
+        .bar-rating-div {
+          .bar-rating {
+            .custom-progress {
+              width: 150px;
+            }
+          }
+        }
+      }
+
+      .second-div {
+        .rating-value {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 405px) {
+  .rating {
+    .main-div {
+      .first-div {
+        .bar-rating-div {
+          .bar-rating {
+            .custom-progress {
+              width: 80px;
+            }
+          }
+        }
+      }
+
+      .second-div {
+        .centered {
+          // border: 1px solid red;
+
+          .circular-rating,
+          .circular-ratings {
+            svg {
+              width: 40px;
+              height: 40px;
+            }
+          }
+        }
+
+        .rating-value {
+          font-size: 11px;
+        }
+      }
+    }
+  }
+}

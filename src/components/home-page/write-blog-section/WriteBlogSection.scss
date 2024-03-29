@@ -1,0 +1,32 @@
+.blog-advertise {
+  // border: 1px solid red;
+  width: 81%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 30px auto;
+
+  .advertise {
+    width: 100%;
+  }
+
+  .mo-advertise {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+  .blog-advertise {
+    .advertise {
+      display: none;
+    }
+
+    .mo-advertise {
+      display: block;
+      width: 100%;
+    }
+  }
+}

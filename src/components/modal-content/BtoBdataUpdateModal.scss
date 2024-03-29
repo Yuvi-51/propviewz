@@ -1,0 +1,72 @@
+.BtoBdataUpdateModal {
+  select {
+    width: 100%;
+    border-radius: 1px solid black;
+  }
+  .selector {
+    background-color: #fff;
+  }
+
+  .placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    color: #d9d9d9 !important;
+  }
+
+  .icon {
+    padding: 10px;
+    background: #d7ebff;
+    border-radius: 0px 4px 4px 0px;
+  }
+  .hover\:bg-\[\#f1592a\]\/80:hover {
+    background-color: green !important;
+  }
+  .select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  .select-btn:focus {
+    outline: none;
+    border-color: #f1592a;
+  }
+  .select_tag {
+    border: 1px solid #d9d9d9;
+    padding: 7px;
+    border-radius: 6px;
+  }
+  .align {
+    display: flex;
+    gap: 10px;
+  }
+  .multiselector {
+    .optionContainer {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 10px;
+      justify-content: center;
+      width: 100%;
+    }
+    .chip {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px;
+      margin: 5px;
+      background-color: #f1592a;
+    }
+    .bg-default-100 {
+      background-color: white !important;
+      border: 1px solid #d9d9d9;
+      height: 25px !important;
+      border-radius: 4px !important;
+    }
+  }
+}
